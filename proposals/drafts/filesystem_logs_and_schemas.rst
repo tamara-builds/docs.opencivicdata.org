@@ -135,10 +135,9 @@ Every log entry JSON object must include the following top-level fields:
 * `occurred_at`: RFC 3339 UTC timestamp
 * `jurisdiction_id`: OCD-style jurisdiction identifier
 * `session_id`: legislative session identifier
-* `entity_type`: type of entity the log refers to (e.g., `bill`, `event`)
+* `entity_type`: type of entity the log refers to (e.g., `bill`, `vote_event`)
 * `entity_id`: stable identifier of the related entity
-* `kind`: classification of the log entry (e.g., `action`, `vote_event`)
-* `payload`: object containing the domain-specific data for the log entry
+* `url`: optional URL for the entity (for example, the jurisdiction web page containing the bill text or vote record)
 
 Vote Events
 -----------
